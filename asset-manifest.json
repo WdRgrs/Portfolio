@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/static/js/main.bda1eb73.js",
-    "static/media/WadeRogers4.png": "/static/media/WadeRogers4.4db45f8a4fc56948170a.png",
-    "static/media/Netflix-home.png": "/static/media/Netflix-home.746235c8981c4cc02c0b.png",
-    "static/media/DevMCertificate.png": "/static/media/DevMCertificate.107f4855a2cce32ad891.png",
-    "static/media/NextIQCertification.png": "/static/media/NextIQCertification.47d95b45aeb617fbf472.png",
-    "static/media/Melodient-genre.png": "/static/media/Melodient-genre.985c740ade1d97e4d114.png",
-    "static/media/Melodient.png": "/static/media/Melodient.373bff7b37dd1488d57a.png",
-    "static/media/RespWebDesCert.png": "/static/media/RespWebDesCert.3256648835725cda4265.png",
-    "static/media/WadeRogersComputer.png": "/static/media/WadeRogersComputer.c3369a4ca5192d8e931e.png",
-    "static/media/Melodient-tracks.png": "/static/media/Melodient-tracks.798e31ba2547acecd5ad.png",
-    "static/media/Melodient-artists.png": "/static/media/Melodient-artists.6b849fdb8301da43ea8a.png",
-    "static/media/NextIQ-QA-docs-2.png": "/static/media/NextIQ-QA-docs-2.5bf34bbba8e92ba2fa51.png",
-    "static/media/NextIQ-QA-docs-1.png": "/static/media/NextIQ-QA-docs-1.877cd41b7004dd153316.png",
-    "static/media/Melodient-landing.png": "/static/media/Melodient-landing.b056f353285443b9be3c.png",
-    "static/media/WadeRogersWeld.png": "/static/media/WadeRogersWeld.2677fce46e282c7813df.png",
-    "static/media/FigmaPortfolio.png": "/static/media/FigmaPortfolio.e7d77e97bf99a1ab155f.png",
-    "static/media/Netflix-landing.png": "/static/media/Netflix-landing.fb8352b868f2bf2d4c08.png",
-    "static/media/Clone-landing.png": "/static/media/Clone-landing.40c430a9950c9d3ca520.png",
-    "static/media/Spotify-login.png": "/static/media/Spotify-login.8e53292beddfb5d3ccb8.png",
-    "static/media/DevMountainLogo.png": "/static/media/DevMountainLogo.53780e6d463943b01488.png",
-    "index.html": "/index.html",
-    "main.bda1eb73.js.map": "/static/js/main.bda1eb73.js.map"
+    "main.js": "/Portfolio/static/js/main.d19a6e41.js",
+    "static/media/WadeRogers4.png": "/Portfolio/static/media/WadeRogers4.4db45f8a4fc56948170a.png",
+    "static/media/Netflix-home.png": "/Portfolio/static/media/Netflix-home.746235c8981c4cc02c0b.png",
+    "static/media/DevMCertificate.png": "/Portfolio/static/media/DevMCertificate.107f4855a2cce32ad891.png",
+    "static/media/NextIQCertification.png": "/Portfolio/static/media/NextIQCertification.47d95b45aeb617fbf472.png",
+    "static/media/Melodient-genre.png": "/Portfolio/static/media/Melodient-genre.985c740ade1d97e4d114.png",
+    "static/media/Melodient.png": "/Portfolio/static/media/Melodient.373bff7b37dd1488d57a.png",
+    "static/media/RespWebDesCert.png": "/Portfolio/static/media/RespWebDesCert.3256648835725cda4265.png",
+    "static/media/WadeRogersComputer.png": "/Portfolio/static/media/WadeRogersComputer.c3369a4ca5192d8e931e.png",
+    "static/media/Melodient-tracks.png": "/Portfolio/static/media/Melodient-tracks.798e31ba2547acecd5ad.png",
+    "static/media/Melodient-artists.png": "/Portfolio/static/media/Melodient-artists.6b849fdb8301da43ea8a.png",
+    "static/media/NextIQ-QA-docs-2.png": "/Portfolio/static/media/NextIQ-QA-docs-2.5bf34bbba8e92ba2fa51.png",
+    "static/media/NextIQ-QA-docs-1.png": "/Portfolio/static/media/NextIQ-QA-docs-1.877cd41b7004dd153316.png",
+    "static/media/Melodient-landing.png": "/Portfolio/static/media/Melodient-landing.b056f353285443b9be3c.png",
+    "static/media/WadeRogersWeld.png": "/Portfolio/static/media/WadeRogersWeld.2677fce46e282c7813df.png",
+    "static/media/FigmaPortfolio.png": "/Portfolio/static/media/FigmaPortfolio.e7d77e97bf99a1ab155f.png",
+    "static/media/Netflix-landing.png": "/Portfolio/static/media/Netflix-landing.fb8352b868f2bf2d4c08.png",
+    "static/media/Clone-landing.png": "/Portfolio/static/media/Clone-landing.40c430a9950c9d3ca520.png",
+    "static/media/Spotify-login.png": "/Portfolio/static/media/Spotify-login.8e53292beddfb5d3ccb8.png",
+    "static/media/DevMountainLogo.png": "/Portfolio/static/media/DevMountainLogo.53780e6d463943b01488.png",
+    "index.html": "/Portfolio/index.html",
+    "main.d19a6e41.js.map": "/Portfolio/static/js/main.d19a6e41.js.map"
   },
   "entrypoints": [
-    "static/js/main.bda1eb73.js"
+    "static/js/main.d19a6e41.js"
   ]
 }
