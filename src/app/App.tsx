@@ -35,10 +35,10 @@ function App() {
     <ApplicationWrapper>
       <Router>
         <Routes>
-          <Route path={`/${Pages.DEVELOPMENT}`} element={<DevelopmentPage />} />
+          <Route path={`Portfolio/${Pages.DEVELOPMENT}`} element={<DevelopmentPage />} />
           <Route path={`/${Pages.WELDING}`} element={<WeldingPage />} />
           <Route path={`/${Pages.PHOTOGRAPHY}`} element={<PhotographyPage />} />
-          <Route path={`/${Pages.LANDING}`} element={<LandingPage />} />
+          <Route path={`Portfolio/${Pages.LANDING}`} element={<LandingPage />} />
         </Routes>
       </Router> 
       <GlobalStyle />
