@@ -37,6 +37,10 @@ const Container = styled.div<Props>`
 	
 	${mediaBreak.mobile} {
     flex-direction: column;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: calc(100% - 2rem);
 	}
 `
 const PageContainer: React.FC<Props> = ({

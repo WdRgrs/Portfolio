@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styled, { css } from '../styles/styled-components'
 import theme, { colors } from '../styles/light-theme'
 import mediaBreak from '../styles/breakpoints'
+import { wrap } from 'module'
 
 const LocalNavContainer = styled.div`
   display: flex;
@@ -12,6 +13,10 @@ const LocalNavContainer = styled.div`
   margin: 1rem 2rem;
   box-sizing: border-box;
   width: 100%;
+  ${mediaBreak.mobile} {
+    /* width: calc(100% - 1rem); */
+    
+}
 `
 
 const TitleContainer = styled.div`
@@ -21,6 +26,7 @@ const TitleContainer = styled.div`
   gap: 2.5em;
   margin-bottom: 1rem;
   max-width: calc(100% - 2rem);
+  flex-wrap: wrap;
 `
 type TitleProps = {
   underline?: number
@@ -67,7 +73,7 @@ const Title = styled.div<TitleProps>`
 	}
 	
 	${mediaBreak.mobile} {
-
+    
 	}
 `
 const Content = styled.div`

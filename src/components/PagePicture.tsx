@@ -11,8 +11,12 @@ const PictureContainer = styled.div`
 
   ${mediaBreak.mobile} {
     display: flex;
-    justify-self: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: none;
     margin: 1rem auto;
+    width: fit-content;
   }
 `
 const Picture = styled.img`
