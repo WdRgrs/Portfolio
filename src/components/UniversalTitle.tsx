@@ -19,7 +19,7 @@ const TitleContainer = styled.div`
   /* box-sizing: border-box; */
 `
 const Title = styled.h1`
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: ${theme.fonts.families.cinzel};
 `
 const SubTitle = styled.h2`
 `

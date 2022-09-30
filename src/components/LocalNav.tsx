@@ -71,7 +71,7 @@ const Title = styled.div<TitleProps>`
 	}
 `
 const Content = styled.div`
-  font-family: 'Poppins', sans-serif;
+  font-family: ${theme.fonts.families.poppins};
   font-weight: 300;
   box-sizing: border-box;
   max-width: calc(3 * (345px + 1rem) - 1rem + 4px);

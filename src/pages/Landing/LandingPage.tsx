@@ -88,7 +88,7 @@ const NameContainer = styled.div`
   -webkit-text-stroke-color: ${theme.colors.secondarypop};
   /* margin-bottom: -1px; */
 
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: ${theme.fonts.families.cinzel};
   font-size: 7rem;  
 	
 	${mediaBreak.laptop} {
