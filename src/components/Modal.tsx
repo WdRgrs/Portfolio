@@ -1,11 +1,16 @@
 import React, { useContext } from 'react'
 import { ActiveContext } from '../pages/Development/DevelopmentPage'
 
+// COMPONENTS
+import Icon from './Icon'
+
+// CONSTANTS
+import { Icons } from '../constants/Icons'
+
 // STYLES
 import styled, { css } from '../styles/styled-components'
 import theme, { colors } from '../styles/light-theme'
-import Icon from './Icon'
-import { Icons } from '../constants/Icons'
+import mediaBreak from '../styles/breakpoints'
 
 // STYLED COMPONENTS
 const ModalOverlay = styled.div`
@@ -24,6 +29,9 @@ const ModalOverlay = styled.div`
     ${theme.colors.secondaryhalf},
     transparent
   ); */
+  ${mediaBreak.mobile} {
+    overflow: scroll;  
+  }
 `
 const ModalContainer = styled.div`
   display: flex;
@@ -34,6 +42,18 @@ const ModalContainer = styled.div`
   height: 600px;
   background-color: ${theme.colors.primary};
   opacity: .95;
+
+  ${mediaBreak.tablet} {
+
+  }
+
+  ${mediaBreak.mobile} {
+    width: calc(100% - 1rem);
+    height: 100%;
+    height: fit-content;
+    overflow: auto;
+    
+  }
 `
 const Close = styled.div`
   position: absolute;

@@ -1,16 +1,18 @@
 import React, { useState, createContext, useEffect, EffectCallback } from 'react'
-import SimpleImageSlider from "react-simple-image-slider";
+import SimpleImageSlider from 'react-simple-image-slider'
+import { useMediaQuery } from 'react-responsive'
 
 // COMPONENTS
 import StyledLink from '../../../components/StyledLink'
-import Modal from '../../../components/Modal';
+import Modal from '../../../components/Modal'
 
 // UTILS
-import { trimLink } from '../../../utils/utilities';
+import { trimLink } from '../../../utils/utilities'
 
 // STYLES
 import styled, { css } from '../../../styles/styled-components'
 import theme, { colors } from '../../../styles/light-theme'
+import mediaBreak, { breaks } from '../../../styles/breakpoints'
 
 // SYTLED COMPONENTS
 const TitleContainer = styled.div`
@@ -26,6 +28,11 @@ const Title = styled.div`
   font-size: 3rem;
   line-height: 2rem;
   opacity: .8;
+  
+  ${mediaBreak.mobile} {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
 `
 const Subitle = styled.div`
   font-family: ${theme.fonts.families.barlow};
@@ -45,18 +52,45 @@ const LinkWrapper = styled.div`
   top: .4rem;
   right: 0;
   left: 0;
+
+  ${mediaBreak.tablet} {
+
+  }
+
+  ${mediaBreak.mobile} {
+    /* display: flex; */
+    position: relative;
+    margin: 0 1rem;
+    top: 0;
+  }
 `
 const ContentContainer = styled.div`
   display: flex;
   margin: 1rem;
   gap: 1rem;
   height: 50%;
+  ${mediaBreak.tablet} {
+
+}
+
+${mediaBreak.mobile} {
+  /* display: flex; */
+  flex-direction: column;
+
+}
 `
 const ImageContainer = styled.div`
  & div {
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: top;
+  }
+
+  ${mediaBreak.tablet} {
+
+  }
+
+  ${mediaBreak.mobile} {
   }
 `
 const Dates = styled.div`
@@ -148,6 +182,11 @@ const DevModal: React.FC<Props> = ({
   icon,
 }: Props): JSX.Element => {
 
+  const maxMobile = useMediaQuery({ query: `(max-width: ${breaks.mobile.max}px)`}) // number
+
+  console.log(maxMobile)
+  const sliderWidth = maxMobile ? 300 : 400
+
   return (
     <Modal>
       <TitleContainer>
@@ -169,7 +208,7 @@ const DevModal: React.FC<Props> = ({
         <ImageContainer>
           <SimpleImageSlider
             height={240}
-            width={400}
+            width={sliderWidth}
             images={images}
             showBullets={false}
             showNavs={false}
