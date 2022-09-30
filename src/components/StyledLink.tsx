@@ -29,7 +29,7 @@ const LinkStyle = styled.a<Props>`
     ${theme.colors.secondary} 50%,
     ${props => props.color ? props.color : theme.colors.primary} 50%
   );
-  font-weight: 400;
+  font-weight: ${theme.fonts.weights.book};
   background-size: 200% 100%;
   background-position: -100%;
   background-clip: text;

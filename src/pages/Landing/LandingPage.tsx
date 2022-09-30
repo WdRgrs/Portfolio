@@ -269,7 +269,7 @@ const StyledBreak = styled.div`
 		content: '|';
 		color: ${theme.colors.accent};
 		font-size: .9rem;
-		font-weight: 800;
+    font-weight: ${theme.fonts.weights.bold};
 		opacity: .6;
 		position: relative;
 		top: .45rem;

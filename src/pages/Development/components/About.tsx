@@ -21,7 +21,7 @@ const Content = styled.div`
 
   span {
     font-family: ${theme.fonts.families.poppins};
-    font-weight: 600;
+    font-weight: ${theme.fonts.weights.medbold};
     color: ${theme.colors.secondary};
   }
 `
@@ -29,7 +29,7 @@ const SuperLink = styled.a`
   cursor: pointer;
   position: relative;
   font-family: ${theme.fonts.families.poppins};
-  font-weight: 600;
+  font-weight: ${theme.fonts.weights.medbold};
   color: ${theme.colors.accentorange};
   transition-duration: .2s;
 

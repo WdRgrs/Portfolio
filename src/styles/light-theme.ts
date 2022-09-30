@@ -70,6 +70,7 @@ const fonts = {
     light: '300',
     book: '400',
     medium: '500',
+    medbold: '600',
     bold: '700',
   }
 }
