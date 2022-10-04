@@ -72,7 +72,7 @@ const About: React.FC = (): JSX.Element => {
   return (
     <>
       <Content>
-        My first Career as a welder and pipefiiter took me from coast to coast and even for a stint down to the bahamas.  Copy, pictures and projects to be updated soon!  Currently in the process of building out this portion fo the website.
+        My first Career as a welder and pipefiiter took me from coast to coast and even for a stint down to the Bahamas.  Copy, pictures and projects to be updated soon!  Currently in the process of building out this portion of the website.
       </Content> 
     </>
   )
