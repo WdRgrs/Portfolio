@@ -16,11 +16,14 @@ import Section from '../../components/Section'
 import PagePicture from '../../components/PagePicture'
 import Footer from '../../components/Footer'
 
+// LOCAL COMPONENTS
+import About from './components/About'
+import Projects from './components/Projects'
+
 // STYLES
 import styled from '../../styles/styled-components'
 import theme from '../../styles/light-theme'
 import mediaBreak from '../../styles/breakpoints'
-import About from './components/About'
 
 const WeldingPage: React.FC = ():JSX.Element => {
   return (
@@ -34,19 +37,13 @@ const WeldingPage: React.FC = ():JSX.Element => {
         />
         <LocalNav 
           titleOptions={[
+            'Projects', 
             'About', 
-            // 'Projects', 
             // 'Blacksmithing & Metal Arts'
           ]} 
-          firstContent={<About />}
-          secondContent={
-            <>
-            </>
-          }
-          thirdContent={
-            <>
-            </>
-          }
+          firstContent={<Projects />}
+          secondContent={<About />}
+          thirdContent={<></>}
         />
       </PageContainer>
       <Footer />
