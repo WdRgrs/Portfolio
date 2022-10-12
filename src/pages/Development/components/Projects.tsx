@@ -1,7 +1,6 @@
 import React from 'react'
 
 // COMPONENTS
-import Section from '../../../components/Section'
 import ProjectCard from '../../../components/ProjectCard'
 
 // ASSETS

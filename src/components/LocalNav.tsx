@@ -80,7 +80,7 @@ const Content = styled.div`
   font-family: ${theme.fonts.families.poppins};
   font-weight: ${theme.fonts.weights.light};
   box-sizing: border-box;
-  max-width: calc(3 * (345px + 1rem) - 1rem + 4px);
+  max-width: calc(3 * (400px + 1rem) - 1rem + 4px);
 
 	${mediaBreak.mobile} {
     max-width: calc(100% - 2rem);

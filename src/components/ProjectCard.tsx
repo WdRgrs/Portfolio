@@ -28,7 +28,8 @@ const ProjectCard = styled.div`
   border-top: 3px solid ${theme.colors.background};
   color: ${theme.colors.primary};
   transition-duration: .25s;
-  box-shadow: 2px 4px 10px ${theme.colors.lightgrey};
+  box-shadow: 0px 10px 8px ${theme.colors.lightgrey};
+
   box-sizing: border-box;
   
   &:hover {
