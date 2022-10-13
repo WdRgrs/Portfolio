@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.8b00d101.js",
+    "main.js": "/Portfolio/static/js/main.c205375e.js",
     "static/media/WadeRogers4.png": "/Portfolio/static/media/WadeRogers4.4db45f8a4fc56948170a.png",
     "static/media/Netflix-home.png": "/Portfolio/static/media/Netflix-home.746235c8981c4cc02c0b.png",
     "static/media/DevMCertificate.png": "/Portfolio/static/media/DevMCertificate.107f4855a2cce32ad891.png",
@@ -11,19 +11,28 @@
     "static/media/WadeRogersComputer.png": "/Portfolio/static/media/WadeRogersComputer.c3369a4ca5192d8e931e.png",
     "static/media/Melodient-tracks.png": "/Portfolio/static/media/Melodient-tracks.798e31ba2547acecd5ad.png",
     "static/media/Melodient-artists.png": "/Portfolio/static/media/Melodient-artists.6b849fdb8301da43ea8a.png",
+    "static/media/RD.webp": "/Portfolio/static/media/RD.07ff2aae1f2970a17cd7.webp",
+    "static/media/BeltBuckle.webp": "/Portfolio/static/media/BeltBuckle.cb8ab99375debae9134b.webp",
     "static/media/NextIQ-QA-docs-2.png": "/Portfolio/static/media/NextIQ-QA-docs-2.5bf34bbba8e92ba2fa51.png",
     "static/media/NextIQ-QA-docs-1.png": "/Portfolio/static/media/NextIQ-QA-docs-1.877cd41b7004dd153316.png",
+    "static/media/Welds.webp": "/Portfolio/static/media/Welds.53f431ff214c77562f98.webp",
     "static/media/Melodient-landing.png": "/Portfolio/static/media/Melodient-landing.b056f353285443b9be3c.png",
     "static/media/WadeRogersWeld.png": "/Portfolio/static/media/WadeRogersWeld.2677fce46e282c7813df.png",
+    "static/media/WadeRogersWeld2.webp": "/Portfolio/static/media/WadeRogersWeld2.f69b24692ca04c5a0c5c.webp",
+    "static/media/HooverDam.webp": "/Portfolio/static/media/HooverDam.f561e1e66e4d548f4a32.webp",
     "static/media/FigmaPortfolio.png": "/Portfolio/static/media/FigmaPortfolio.e7d77e97bf99a1ab155f.png",
+    "static/media/BsLeaf.webp": "/Portfolio/static/media/BsLeaf.bec5dd6336bfdca008f4.webp",
+    "static/media/BPWeldSchool.webp": "/Portfolio/static/media/BPWeldSchool.c6c2fe9763fe5d32945c.webp",
+    "static/media/WadeRogersWelding.webp": "/Portfolio/static/media/WadeRogersWelding.a52da1384c1869f404c0.webp",
     "static/media/Netflix-landing.png": "/Portfolio/static/media/Netflix-landing.fb8352b868f2bf2d4c08.png",
+    "static/media/HooverDam2.webp": "/Portfolio/static/media/HooverDam2.80719104339d6e58ce62.webp",
     "static/media/Clone-landing.png": "/Portfolio/static/media/Clone-landing.40c430a9950c9d3ca520.png",
     "static/media/Spotify-login.png": "/Portfolio/static/media/Spotify-login.8e53292beddfb5d3ccb8.png",
     "static/media/DevMountainLogo.png": "/Portfolio/static/media/DevMountainLogo.53780e6d463943b01488.png",
     "index.html": "/Portfolio/index.html",
-    "main.8b00d101.js.map": "/Portfolio/static/js/main.8b00d101.js.map"
+    "main.c205375e.js.map": "/Portfolio/static/js/main.c205375e.js.map"
   },
   "entrypoints": [
-    "static/js/main.8b00d101.js"
+    "static/js/main.c205375e.js"
   ]
 }
