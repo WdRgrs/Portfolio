@@ -1,6 +1,7 @@
 import React from 'react'
 
 // COMPONENTS
+import ProjectFlipCard from '../../../components/ProjectFlipCard'
 
 // ASSETS
 import WadeRogersWelding from '../../../assets/Welding/WadeRogersWelding.webp'
@@ -13,15 +14,9 @@ import RD from '../../../assets/Welding/RD.webp'
 import WadeRogersWeld2 from '../../../assets/Welding/WadeRogersWeld2.webp'
 import Welds from '../../../assets/Welding/Welds.webp'
 
-
-// CONSTANTS
-import { ProjectDates, ProjectDescription, ProjectPosition, ProjectTitle } from '../../../constants/Projets'
-import { Links } from '../../../constants/Links'
-
 // STYLES
 import styled, { css } from '../../../styles/styled-components'
 import theme, { colors } from '../../../styles/light-theme'
-import ProjectFlipCard from '../../../components/ProjectFlipCard'
 
 const CardContainer = styled.div`
   display: flex;
@@ -40,30 +35,39 @@ const Projects: React.FC<Props> = ({
     <CardContainer>
       <ProjectFlipCard 
         img={WadeRogersWelding}
+        mainText={'Nassau, Bahamas'}
       />
       <ProjectFlipCard 
         img={BeltBuckle}
+        mainText={'Pipefitter\'s belt buckle'}
       />
       <ProjectFlipCard 
         img={BPWeldSchool}
+        mainText={'Chromoly project'}
       />
       <ProjectFlipCard 
         img={BsLeaf}
+        mainText={'Blacksmithing, Leaf'}
       />
       <ProjectFlipCard 
         img={HooverDam}
+        mainText={'Penstock tunnels, HD'}
       />
       <ProjectFlipCard 
         img={HooverDam2}
+        mainText={'Outlet works, HD'}
       />
       <ProjectFlipCard 
         img={RD}
+        mainText={'R & D, Water purification'}
       />
       <ProjectFlipCard 
         img={WadeRogersWeld2}
+        mainText={'Stainless chamber welding'}
       />
       <ProjectFlipCard 
         img={Welds}
+        mainText={'Exotic metals'}
       />
     </CardContainer>
   )

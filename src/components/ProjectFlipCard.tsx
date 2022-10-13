@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 
 // COMPONENTS
 import StyledLink from './StyledLink'
-import ImageOverlay from './ImageOverlay'
 import Modal from './Modal'
 
 // UTILS
@@ -17,8 +16,12 @@ const ProjectCardContainer = styled.div`
   display: flex;
   width: 400px;
   height: 400px;
-  color: #95A4AF;  
+  color: ${theme.colors.lightestgrey};
   box-sizing: border-box;
+  
+  &:hover {
+    cursor: pointer;
+  }
 `
 type CardProps = {
   active?: boolean
@@ -27,30 +30,48 @@ type CardProps = {
 const ProjectCard = styled.div<CardProps>`
   display: flex;
   position: relative;
-  
   background-color: #36383F;
   justify-content: center;
   align-items: center;
   margin: auto;
-
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   -webkit-perspective: 1000em;
   perspective: 1000em;
-
-
   transition: all 1.5s ease-in;
-
   transform: ${props => props.active ? 
     'perspective(1000em) rotateY(180deg)' : ''};  
+`
+const ImageOverlay = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1.2s;
+  background-image: linear-gradient(
+    to top,
+    ${theme.colors.primary},
+    transparent
+  );
+  opacity: 0;
+  font-family: ${theme.fonts.families.poppins};
+  font-weight: ${theme.fonts.weights.book};
+  font-size: ${theme.fonts.sizes.xlarge};
+  color: ${theme.colors.white};
+  &:hover {
+    opacity: .6;
+  }
 `
 const BlurImage = styled.div<CardProps>`
   background-image: ${props => props.img ? `url(${props.img})` : ''};
   position: absolute;
   z-index: -1;
+  opacity: .7;
   filter: blur(.15rem);
-  /* background-color: red; */
   height: 100%;
   width: 100%;
 `
@@ -64,14 +85,13 @@ const ProjectCardFront = styled.div<CardProps>`
   height: 100%;
   backface-visibility: hidden;
   box-shadow: 0px 10px 8px ${theme.colors.grey};
-
   background-image: ${props => props.img ? `url(${props.img})` : ''};
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   border: 1px solid ${theme.colors.primary};
   box-sizing: border-box;
-
+  
 `
 const ProjectCardBack = styled.div`
   position: absolute;
@@ -90,7 +110,7 @@ const ProjectCardBack = styled.div`
 
 
 type Props = {
-  title?: string
+  mainText?: string
   link?: string
   subtitle?: string
   position?: string
@@ -101,7 +121,7 @@ type Props = {
   alt?: string
 }
 const Projects: React.FC<Props> = ({
-  title,
+  mainText,
   link,
   subtitle,
   position,
@@ -125,13 +145,14 @@ const Projects: React.FC<Props> = ({
         img={img} 
       >
         <ProjectCardFront img={img} >
+          <ImageOverlay>
+            {mainText}
+          </ImageOverlay>
           <BlurImage img={img} />
-          {/* <img  /> */}
-          Front text or image
         </ProjectCardFront>
         <ProjectCardBack>
           <BlurImage img={img} />
-          back text or image
+          More information coming soon!
         </ProjectCardBack>
       </ProjectCard>
     </ProjectCardContainer>
