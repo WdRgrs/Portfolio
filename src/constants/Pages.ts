@@ -1,8 +1,8 @@
 export enum Pages {
-  DEVELOPMENT = 'Portfolio/development',
-  WELDING = 'Portfolio/welding',
-  PHOTOGRAPHY = 'Portfolio/photography',
-  LANDING = 'Portfolio/',
+  DEVELOPMENT = '/development',
+  WELDING = '/welding',
+  PHOTOGRAPHY = '/photography',
+  LANDING = '/',
 }
 
 export enum PageTitle {
