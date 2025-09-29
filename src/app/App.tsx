@@ -1,6 +1,5 @@
-import React from 'react';
-import {Route, Routes, BrowserRouter as Router} from 'react-router-dom'
-
+import React, { useEffect } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 // Pages
 import LandingPage from '../pages/Landing/LandingPage'
@@ -31,19 +30,29 @@ const ApplicationWrapper = styled.div`
 `
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redir = sessionStorage.getItem('redirect');
+    if (redir) {
+      sessionStorage.removeItem('redirect');
+      navigate(redir, { replace: true });
+    }
+  }, [navigate]);
+
   return (
     <ApplicationWrapper>
-      <Router>
-        <Routes>
-          <Route path={`/${Pages.DEVELOPMENT}`} element={<DevelopmentPage />} />
-          <Route path={`/${Pages.WELDING}`} element={<WeldingPage />} />
-          <Route path={`/${Pages.PHOTOGRAPHY}`} element={<PhotographyPage />} />
-          <Route path={`/${Pages.LANDING}`} element={<LandingPage />} />
-        </Routes>
-      </Router> 
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path={`/${Pages.DEVELOPMENT}`} element={<DevelopmentPage />} />
+        <Route path={`/${Pages.WELDING}`} element={<WeldingPage />} />
+        <Route path={`/${Pages.PHOTOGRAPHY}`} element={<PhotographyPage />} />
+        <Route path={`/${Pages.LANDING}`} element={<LandingPage />} />
+        <Route path="*" element={<LandingPage />} />
+      </Routes>
       <GlobalStyle />
     </ApplicationWrapper>
-  )
+  );
 }
 
 export default App
