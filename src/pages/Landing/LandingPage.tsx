@@ -312,19 +312,19 @@ const LandingPage: React.FC = (): JSX.Element => {
 					</NameContainer>
 					<BorderBreak />
 					<JobContainer>
-						<Link to={`/${Pages.DEVELOPMENT}`}>
+						<Link to={Pages.DEVELOPMENT}>
 							<JobTitle>
 								Developer
 							</JobTitle>
 						</Link>
 						<StyledBreak />
-						<Link to={`/${Pages.WELDING}`}>
+						<Link to={Pages.WELDING}>
 							<JobTitle>
 								Welder
 							</JobTitle>
 						</Link>
 						<StyledBreak />
-						<Link to={`/${Pages.PHOTOGRAPHY}`}>
+						<Link to={Pages.PHOTOGRAPHY}>
 							<JobTitle>
 								Photographer
 							</JobTitle>

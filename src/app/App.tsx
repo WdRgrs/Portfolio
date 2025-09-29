@@ -43,11 +43,11 @@ function App() {
   return (
     <ApplicationWrapper>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path={`/${Pages.DEVELOPMENT}`} element={<DevelopmentPage />} />
-        <Route path={`/${Pages.WELDING}`} element={<WeldingPage />} />
-        <Route path={`/${Pages.PHOTOGRAPHY}`} element={<PhotographyPage />} />
-        <Route path={`/${Pages.LANDING}`} element={<LandingPage />} />
+        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path={Pages.DEVELOPMENT} element={<DevelopmentPage />} />
+        <Route path={Pages.WELDING} element={<WeldingPage />} />
+        <Route path={Pages.PHOTOGRAPHY} element={<PhotographyPage />} />
+        <Route path={Pages.LANDING} element={<LandingPage />} />
         <Route path="*" element={<LandingPage />} />
       </Routes>
       <GlobalStyle />
