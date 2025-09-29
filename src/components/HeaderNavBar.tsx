@@ -109,28 +109,28 @@ const HeaderNav: React.FC<Props> = ({
 
   return (
     <Container>
-      <Link to={`/${Pages.DEVELOPMENT}`}>
+      <Link to={Pages.DEVELOPMENT}>
         <ArrowUp 
           active={page === Pages.DEVELOPMENT ? true : false}
         >
           <IconType type={Icons.DEVELOPMENT} header />
         </ArrowUp>
       </Link>
-      <Link to={`/${Pages.WELDING}`}>
+      <Link to={Pages.WELDING}>
         <ArrowDown 
           active={page === Pages.WELDING ? true : false}
         >
           <IconType type={Icons.WELDING} header />
         </ArrowDown>
       </Link>
-      <Link to={`/${Pages.PHOTOGRAPHY}`}>
+      <Link to={Pages.PHOTOGRAPHY}>
         <ArrowUp 
           active={page === Pages.PHOTOGRAPHY ? true : false} 
         >
         <IconType type={Icons.PHOTOGRAPHY} header />
       </ArrowUp>
       </Link>
-      <Link to={`/${Pages.LANDING}`}>
+      <Link to={Pages.LANDING}>
         <ArrowDown 
           active={page === Pages.LANDING ? true : false}
         >
